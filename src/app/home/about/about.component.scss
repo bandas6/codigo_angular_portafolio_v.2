@@ -1,0 +1,28 @@
+.body{
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.titulo_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 0.7rem;
+    span{
+        font-size: 14px;
+        color: #adadad;
+    }
+}

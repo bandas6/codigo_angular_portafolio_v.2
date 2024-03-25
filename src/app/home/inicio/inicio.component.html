@@ -1,0 +1,39 @@
+<div class="row col-12 m-auto">
+    <div class="col-12 col-md-5">
+        <div class="titulo_inicio">
+            <p>Hello!</p>
+            <h1>I have experience in Develop Web.</h1>
+        </div>
+        <div class="contenido_inicio">
+            <p> <fa-icon class="faGrioHorizontal" [icon]="faGripHorizontal"></fa-icon> Hello! I am a Frontend Developer
+                -_-, I specialize in developing web and mobile applications tailored to meet clients' needs.</p>
+            <div class="contenedor_botones">
+                <a href="https://wa.me/qr/OGRG2NNHKV6XD1" style="text-decoration: none;">
+                    <button class="btn talk"> <span>Let's Talk</span> <fa-icon class="faPaperPlane"
+                            [icon]="faPaperPlane"></fa-icon></button>
+                </a>
+                <a href="../../../assets/documentos/hoja-de-vida-Arnold Sinisterra.pdf" (click)="descargar()" style="text-decoration: none;">
+                    <button class="btn portfolio">
+                        @if(descargando){
+                            <span>Down </span> 
+                            <fa-icon class="faPaperPlane" [spin]="true" [icon]="faSpinner"></fa-icon>
+                        }
+                        @if(!descargando){
+                            <span>CV </span> 
+                            <fa-icon class="faPaperPlane" [icon]="faDownload"></fa-icon>
+                        }
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-7 contenedor_totalImg">
+        <div class="contenedor_imgContenido">
+            <img class="cuadro_uno" src="../../../assets/img/imagen_inicio.png" alt="portafolio">
+            <img class="cuadro_dos" src="../../../assets/img/imagen_inicio.png" alt="portafolio">
+            <img class="cuadro_tres" src="../../../assets/img/imagen_inicio.png" alt="portafolio">
+            <img class="cuadro_cuatro" src="../../../assets/img/imagen_inicio.png" alt="portafolio">
+            <img class="lina_vertical" src="../../../assets/img/imagen_verticalinicio.png" alt="portafolio">
+        </div>
+    </div>
+</div>

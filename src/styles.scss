@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --primary-color: #dcdcdc26;
+    --secondary-color: #9680c1;
+    --tertiary-color: #000000;
+}
+
+body {
+    background: var(--primary-color) !important;
+}
+
+.contenedor {
+    margin: auto;
+    padding: 8px 38px;
+    margin-top: 1rem;
+    max-width: 1433px;
+}
+
+.cabezera{
+    max-width: 1433px;
+}

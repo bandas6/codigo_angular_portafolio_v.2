@@ -1,0 +1,169 @@
+.cabezera {
+    margin: auto;
+    padding: 8px 69px;
+}
+
+.cabezera img {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6px;
+}
+
+.contenedor {
+    margin: auto;
+    padding: 8px 38px;
+    margin-top: 1rem;
+}
+
+.opcion.active {
+    border-bottom: 2px solid;
+}
+
+.listado__opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+}
+
+.listado__opciones a {
+    list-style: none;
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.contenedor_seach {
+    
+    position: relative;
+    z-index: 10;
+}
+
+.opciones_menu {
+    top: 28%;
+    position: relative;
+}
+
+input#exampleFormControlInput1 {
+    border-radius: 1rem 0rem 0rem 1rem;
+    height: 2rem;
+}
+
+.input-group.mb-3 {
+    width: 10rem;
+    top: 28%;
+    position: relative;
+    margin-left: auto;
+}
+
+.input-group-text {
+    font-size: 0.5rem;
+}
+
+.menuMobile {
+    display: none;
+}
+
+div#menuMobile fa-icon {
+    font-size: 2rem;
+    text-align: right;
+    padding: 0.1rem 0.9rem;
+    background-color: #dcdcdc54;
+    border-radius: 0.6rem;
+}
+
+div#menuMobile fa-icon:active {
+    background-color: #dcdcdc28;
+    border-color: #7f7f7f;
+}
+
+.contenedor_seach {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.contenedor_seach img{
+    width: 61px;
+    height: 61px;
+}
+
+.opcionesMenuMobile{
+    display: none;
+}
+
+@media (max-width: 991.98px) { 
+
+    .contenedor_seach img {
+        width: 40px;
+        height: 61px;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    .opcionesMenuMobile {
+        position: absolute;
+        background: gainsboro;
+        height: 100vh;
+        z-index: 16;
+        opacity: 0.94;
+    }
+
+    .listado__opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+        align-items: flex-start;
+        padding: 1rem 3rem 0rem 0rem;
+        gap: 20px;
+    }
+
+    .listado__opciones ul {
+        padding-left: 1rem;
+    }
+    
+    .opciones_menu {
+        top: 0%;
+        position: initial;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .cabezera {
+        margin: auto;
+        padding: 18px 0px;
+        background-color: rgb(220 220 220 / 13%);
+    }
+
+    .menu_escritorio {
+        display: none;
+    }
+
+    .menuMobile {
+        display: flex;
+        justify-content: right;
+    }
+    
+    .opcionesMenuMobile{
+        display: initial;
+    }
+}
+
+@media (max-width: 575.98px) { 
+
+    .contenedor {
+        margin: auto;
+        padding: 5px 18px;
+        margin-top: 1rem;
+    }
+    
+}

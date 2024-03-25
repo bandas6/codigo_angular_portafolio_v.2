@@ -1,0 +1,61 @@
+<div class="row col-12 cabezera">
+    <div class="col-10 menuMobile">
+        <!-- <img src="../../../assets/img/logo.png" alt="logo"> -->
+    </div>
+    <div class="col-2 menuMobile" id="menuMobile" (click)="mostarMenu()">
+        @if(!mostrarMenu){
+            <fa-icon [icon]="faBars"></fa-icon>
+        }
+        @if(mostrarMenu){
+            <fa-icon [icon]="faClose"></fa-icon>
+        }
+    </div>
+    <div class="col-3 menu_escritorio" routerLink="./home" style="cursor: pointer;">
+        <img src="../../../assets/img/logo.png" alt="logo">
+    </div>
+    <div class="col-6 menu_escritorio">
+        <div class="opciones_menu">
+            <ul>
+                <li class="listado__opciones">
+                    @for(opcion of arrayOpciones; track opcion){
+                        <a class="opcion" [routerLink]="opcion.ruta" routerLinkActive="active" (click)="mostarMenu()">{{opcion.nombre}}</a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-3 contenedor_seach menu_escritorio">
+        <a href="www.linkedin.com/in/arnold-lozano-3sadsa">
+            <img src="../../assets/img/linkedin.svg" alt="">
+        </a>
+        <a href="https://www.instagram.com/arnoldsl97/">
+            <img src="../../assets/img/instagram.svg" alt="">
+        </a> 
+        <a href="https://wa.me/qr/OGRG2NNHKV6XD1">
+            <img src="../../assets/img/whatsapp.svg" alt="">
+        </a>
+        <!-- <div class="input-group mb-3">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+            <span class="input-group-text" id="basic-addon1">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </span>
+        </div> -->
+    </div>
+</div>
+@if(mostrarMenu){
+    <div class="opcionesMenuMobile" >
+        <div class="opciones_menu">
+            <ul>
+                <li class="listado__opciones">
+                    @for(opcion of arrayOpciones; track opcion){
+                        <a (click)="mostarMenu()" class="opcion" [routerLink]="opcion.ruta" routerLinkActive="active">{{opcion.nombre}}</a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+}
+<div class="contenedor">
+    <router-outlet></router-outlet>
+</div>
